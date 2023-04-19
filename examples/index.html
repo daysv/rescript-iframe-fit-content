@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+<body>
+    <iframe src="" id="iframe"></iframe>
+    <script type="module">
+        import * as IframeFitContent from '../src/IframeFitContent.bs.js'
+        const iframe = document.getElementById("iframe")
+        IframeFitContent.make(iframe)
+
+        setInterval(() => {
+            const div = iframe.contentWindow.document.createElement("div")
+            div.style.height = "500px"
+            div.style.backgroundColor = "red"
+            iframe.contentWindow.document.body.appendChild(div)
+        }, 1000)
+    </script>
+</body>
+</html>

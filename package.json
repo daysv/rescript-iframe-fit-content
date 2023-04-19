@@ -1,0 +1,29 @@
+{
+  "name": "rescript-iframe-fit-content",
+  "version": "0.0.1",
+  "description": "Automatically set the height of the iframe based on the content.",
+  "main": "src/IframeFitContent.bs.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daysv/rescript-iframe-fit-content.git"
+  },
+  "homepage": "https://github.com/daysv/rescript-iframe-fit-content#readme",
+  "scripts": {
+    "res:build": "rescript",
+    "res:clean": "rescript clean",
+    "res:dev": "rescript build -w"
+  },
+  "keywords": [
+    "rescript",
+    "iframe-fit-content"
+  ],
+  "author": "daysv",
+  "license": "MIT",
+  "files": [
+    "src",
+    "bsconfig.json"
+  ],
+  "dependencies": {
+    "rescript": "*"
+  }
+}
